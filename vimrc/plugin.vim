@@ -5,6 +5,7 @@ call plug#begin('~/.vim/plugged')
 
 " Custom Plugin
 Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-markdown'
