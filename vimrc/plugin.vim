@@ -26,7 +26,8 @@ Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'branch': 'release/0.x'
   \ }
-Plug 'maxmellon/vim-jsx-pretty'   
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
 " Initialize plugin system
 call plug#end()
 

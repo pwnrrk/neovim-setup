@@ -1,7 +1,11 @@
 syntax on
-"highlight Pmenu ctermbg=gray guibg=gray
-"let g:onedark_termcolors=16
+set t_Co=256
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
 let g:lightline = {
-  \ 'colorscheme': 'nord',
+  \ 'colorscheme': 'onehalfdark',
   \ }
-colorscheme nord
+colorscheme onehalfdark
