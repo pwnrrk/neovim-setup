@@ -1,6 +1,7 @@
 syntax on
-let g:onedark_termcolors=16
+"highlight Pmenu ctermbg=gray guibg=gray
+"let g:onedark_termcolors=16
 let g:lightline = {
-  \ 'colorscheme': 'onedark',
+  \ 'colorscheme': 'nord',
   \ }
-colorscheme onedark
+colorscheme nord
