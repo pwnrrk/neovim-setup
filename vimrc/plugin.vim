@@ -27,7 +27,7 @@ Plug 'prettier/vim-prettier', {
   \ 'branch': 'release/0.x'
   \ }
 Plug 'maxmellon/vim-jsx-pretty'
-Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Initialize plugin system
 call plug#end()
 

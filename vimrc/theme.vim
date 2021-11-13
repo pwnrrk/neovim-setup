@@ -6,6 +6,6 @@ if exists('+termguicolors')
   set termguicolors
 endif
 let g:lightline = {
-  \ 'colorscheme': 'onehalfdark',
+  \ 'colorscheme': 'onedark',
   \ }
-colorscheme onehalfdark
+colorscheme onedark
