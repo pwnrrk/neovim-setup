@@ -9,15 +9,21 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-markdown'
-Plug 'scrooloose/syntastic'
 Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
 Plug 'mattn/emmet-vim'
-Plug 'w0rp/ale'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+let g:coc_global_extensions = [
+  \ 'coc-tsserver',
+  \ 'coc-html',
+  \ 'coc-css',
+  \ 'coc-json',
+  \ 'coc-eslint',
+  \ 'coc-prettier'
+  \ ]
 Plug 'joshdick/onedark.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'sheerun/vim-polyglot'
@@ -28,6 +34,8 @@ Plug 'prettier/vim-prettier', {
   \ }
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'alvan/vim-closetag'
+Plug 'tomasr/molokai'
 " Initialize plugin system
 call plug#end()
 
