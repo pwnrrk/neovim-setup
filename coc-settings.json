@@ -1,0 +1,5 @@
+{
+	"diagnostic.virtualTextCurrentLineOnly": false,
+	"diagnostic.virtualText": true,
+	"diagnostic.virtualTextPrefix": "⬢ "
+}
