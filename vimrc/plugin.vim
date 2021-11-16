@@ -10,6 +10,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-markdown'
 Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
+Plug 'w0rp/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 let g:coc_global_extensions = [
   \ 'coc-tsserver',
@@ -22,9 +23,8 @@ let g:coc_global_extensions = [
 Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
-
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 "THEME
-Plug 'tomasr/molokai'
 Plug 'joshdick/onedark.vim'
 " Initialize plugin system
 call plug#end()
