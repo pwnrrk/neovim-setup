@@ -5,7 +5,7 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set termguicolors
 endif
 set background=dark
-let g:lightline = {
+let g:airline = {
       \ 'colorscheme': 'onedark',
       \ }
 colorscheme onedark
