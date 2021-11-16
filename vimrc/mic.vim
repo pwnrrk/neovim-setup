@@ -2,6 +2,7 @@ set number
 filetype indent on
 filetype plugin indent on
 let NERDTreeShowHidden=1
+let g:airline_powerline_fonts=1
 
 "vimclosetag setting
 " filenames like *.xml, *.html, *.xhtml, ...
