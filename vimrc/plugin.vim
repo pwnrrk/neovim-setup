@@ -26,7 +26,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 "THEME
-Plug 'joshdick/onedark.vim'
+Plug 'rafi/awesome-vim-colorschemes'
 " Initialize plugin system
 call plug#end()
 
