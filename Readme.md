@@ -19,7 +19,6 @@ If autosuggest not showing try to run ./install  again
 - [Vim GitGutter](https://github.com/airblade/vim-gitgutter)
 - [Vim Airline](https://github.com/vim-airline/vim-airline)
 - [Nerd Tree Git Plugin](https://github.com/xuyuanp/nerdtree-git-plugin)
-- [ALE](https://github.com/w0rp/ale)
 - [Coc.nvim](https://github.com/neoclide/coc.nvim)
 - [Vim Polyglot](https://github.com/sheerun/vim-polyglot)
 - [Auto Pairs](https://github.com/jiangmiao/auto-pairs)
@@ -29,3 +28,6 @@ If autosuggest not showing try to run ./install  again
 ### Theme
 [Awesome Vim Colorschemes Pack](https://github.com/rafi/awesome-vim-colorschemes)
 
+## Note
+
+coc-eslint not compatible with eslint v8.x. You will need to use eslint v7.x to get coc-eslint work properly.
