@@ -16,6 +16,7 @@ If autosuggest not showing try to run ./install  again
 - [Vim Fugitive](https://github.com/tpope/vim-fugitive)
 - [Vim Surround](https://github.com/tpope/vim-surround)
 - [Vim Markdown](https://github.com/tpope/vim-markdown)
+- [Vim Commentary](https://github.com/tpope/vim-commentary)
 - [Vim GitGutter](https://github.com/airblade/vim-gitgutter)
 - [Vim Airline](https://github.com/vim-airline/vim-airline)
 - [Nerd Tree Git Plugin](https://github.com/xuyuanp/nerdtree-git-plugin)
