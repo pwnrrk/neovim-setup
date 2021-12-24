@@ -19,7 +19,8 @@ let g:coc_global_extensions = [
   \ 'coc-css',
   \ 'coc-json',
   \ 'coc-eslint',
-  \ 'coc-prettier'
+  \ 'coc-prettier',
+  \ 'coc-styled-components'
   \ ]
 Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
