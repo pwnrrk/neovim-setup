@@ -3,12 +3,15 @@
 Setup for Full Stack Web Developer
 
 ## Installation
-	
-	git clone https://github.com/pwnrrk/neovim-setup
-	cd neovim-setup
-	./install.sh
 
-If autosuggest not showing try to run ./install  again
+    git clone https://github.com/pwnrrk/neovim-setup
+    cd neovim-setup
+    #For Linux and Mac OS
+    ./install.sh
+    #For Windows
+    ./install.ps1
+
+If autosuggest not showing try to run ./install again
 
 ## Plugin list
 
@@ -27,6 +30,7 @@ If autosuggest not showing try to run ./install  again
 - [Vim Styled Components](https://github.com/styled-components/vim-styled-components)
 
 ### Theme
+
 [Awesome Vim Colorschemes Pack](https://github.com/rafi/awesome-vim-colorschemes)
 
 ## Note

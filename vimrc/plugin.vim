@@ -28,6 +28,7 @@ Plug 'alvan/vim-closetag'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 "THEME
 Plug 'rafi/awesome-vim-colorschemes'
+Plug 'wojciechkepka/vim-github-dark'
 " Initialize plugin system
 call plug#end()
 
