@@ -25,6 +25,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'ryanoasis/vim-devicons'
 "THEME
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'wojciechkepka/vim-github-dark'
