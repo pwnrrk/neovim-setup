@@ -30,7 +30,7 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'ryanoasis/vim-devicons'
 "THEME
 Plug 'rafi/awesome-vim-colorschemes'
-Plug 'wojciechkepka/vim-github-dark'
+Plug 'phanviet/vim-monokai-pro'
 " Initialize plugin system
 call plug#end()
 
