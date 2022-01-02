@@ -6,6 +6,6 @@ set termguicolors
 endif
 set background=dark
 let g:airline = {
-      \ 'colorscheme': 'onedark',
+      \ 'colorscheme': 'sonokai',
       \ }
-colorscheme onedark
+colorscheme sonokai
