@@ -9,7 +9,7 @@ local onedarkpro = require('onedarkpro')
 onedarkpro.setup({
 colors = {
       onedark = {
-            bg = "#282C34"
+            bg = "#1E2127"
             }
       }
 })
