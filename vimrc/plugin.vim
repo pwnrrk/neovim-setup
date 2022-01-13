@@ -12,6 +12,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'xuyuanp/nerdtree-git-plugin'
+Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 let g:coc_global_extensions = [
   \ 'coc-tsserver',
