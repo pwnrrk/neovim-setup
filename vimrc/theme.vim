@@ -7,12 +7,9 @@ endif
 lua <<EOF
 local onedarkpro = require('onedarkpro')
 onedarkpro.setup({
-options = {
-      transperency = true
-      },
 colors = {
       onedark = {
-            bg = "#00000000"
+            bg = "#282C34"
             }
       }
 })
