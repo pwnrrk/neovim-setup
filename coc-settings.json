@@ -12,5 +12,6 @@
     "typescriptreact",
     "javascriptreact",
     "vue"
-  ]
+  ],
+  "vetur.format.defaultFormatter.js": "prettier-eslint"
 }
