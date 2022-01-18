@@ -74,6 +74,7 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   },
 }
+require('lualine').setup({ theme = 'nord' })
 EOF
 syntax on
 if exists('+termguicolors')
@@ -94,5 +95,4 @@ colorscheme nord
 "     }
 " })
 " onedarkpro.load()
-" require('lualine').setup({ theme = 'nord' })
 " EOF
