@@ -6,7 +6,6 @@ call plug#begin('~/.vim/plugged')
 " Custom Plugin
 Plug 'preservim/nerdtree'
 Plug 'tpope/vim-surround'
-Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-commentary'
 Plug 'airblade/vim-gitgutter'
 Plug 'nvim-lualine/lualine.nvim'
@@ -31,6 +30,7 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'ryanoasis/vim-devicons'
 "THEME
 Plug 'olimorris/onedarkpro.nvim'
+Plug 'arcticicestudio/nord-vim'
 " Initialize plugin system
 call plug#end()
 

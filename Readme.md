@@ -28,7 +28,6 @@ Setup for use as text editor with pre-installed features for web development. Yo
 
 [Nerd Tree](https://github.com/preservim/nerdtree)  
 [Vim Surround](https://github.com/tpope/vim-surround)  
-[Vim Markdown](https://github.com/tpope/vim-markdown)  
 [Vim Commentary](https://github.com/tpope/vim-commentary)  
 [Vim Gitgutter](https://github.com/airblade/vim-gitgutter)  
 [Lua Line](https://github.com/nvim-lualine/lualine.nvim)  
