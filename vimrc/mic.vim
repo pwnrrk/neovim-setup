@@ -5,6 +5,7 @@ set sidescroll=1
 filetype indent on
 filetype plugin indent on
 let NERDTreeShowHidden=1
+set cmdheight&
 
 "vimclosetag setting
 " filenames like *.xml, *.html, *.xhtml, ...
@@ -74,25 +75,25 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   },
 }
-require('lualine').setup({ theme = 'nord' })
+require('lualine').setup()
 EOF
 syntax on
-if exists('+termguicolors')
-  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
-endif
-"set t_Co=256
+" if exists('+termguicolors')
+"   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+"   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+"   set termguicolors
+" endif
+set t_Co=256
 colorscheme nord
 
 " lua <<EOF
 " local onedarkpro = require('onedarkpro')
 " onedarkpro.setup({
-"   colors = {
-"     onedark = {
-"       bg = "#282C34"
-"       }
+" colors = {
+"   onedark = {
+"     bg = "#282C34"
 "     }
+"   }
 " })
 " onedarkpro.load()
 " EOF
