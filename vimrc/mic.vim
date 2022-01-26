@@ -7,6 +7,16 @@ filetype plugin indent on
 let NERDTreeShowHidden=1
 set cmdheight&
 
+let g:coc_global_extensions = [
+  \ 'coc-tsserver',
+  \ 'coc-html',
+  \ 'coc-css',
+  \ 'coc-json',
+  \ 'coc-eslint',
+  \ 'coc-prettier',
+  \ 'coc-styled-components'
+  \ ]
+
 "vimclosetag setting
 " filenames like *.xml, *.html, *.xhtml, ...
 " These are the file extensions where this plugin is enabled.

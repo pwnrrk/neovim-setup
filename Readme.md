@@ -26,13 +26,15 @@ Setup for use as text editor with pre-installed features for web development. Yo
 
 ## Plugins
 
-[Nerd Tree](https://github.com/preservim/nerdtree)  
 [Vim Surround](https://github.com/tpope/vim-surround)  
-[Vim Commentary](https://github.com/tpope/vim-commentary)  
+[NerdTree](https://github.com/preservim/nerdtree)
+[NerdTree Git Plugin](https://github.com/Xuyuanp/nerdtree-git-plugin)
+[Vim NerdTree Syntax Highlight](https://github.com/tiagofumo/vim-nerdtree-syntax-highlight)
+[Vim Commentary](https://github.com/tpope/vim-commentary)
+[Vim Fugitive](https://github.com/tpope/vim-fugitive)
 [Vim Gitgutter](https://github.com/airblade/vim-gitgutter)  
 [Lua Line](https://github.com/nvim-lualine/lualine.nvim)  
 [Nvim Web Devicons](https://github.com/kyazdani42/nvim-web-devicons)  
-[Nerd Tree Git Plugin](https://github.com/xuyuanp/nerdtree-git-plugin)  
 [Ale](https://github.com/dense-analysis/ale)  
 [COC Nvim](https://github.com/neoclide/coc.nvim)  
 [Nvim Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)  
