@@ -4,8 +4,7 @@
 call plug#begin('~/.vim/plugged')
 
 " Custom Plugin
-" Plug 'preservim/nerdtree'
-Plug 'kyazdani42/nvim-tree.lua'
+Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'nvim-lualine/lualine.nvim'
