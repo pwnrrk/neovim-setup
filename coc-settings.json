@@ -5,6 +5,7 @@
   "diagnostic.infoSign": "",
   "diagnostic.errorSign": "",
   "diagnostic.hintSign": "",
+  "diagnostic.enable": false,
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "markdown",
