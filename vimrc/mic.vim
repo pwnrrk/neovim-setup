@@ -14,8 +14,8 @@ if exists('+termguicolors')
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
-"set t_Co=256
-
+set t_Co=256
+command Q bw
 
 "Ale
 let g:ale_sign_error = ''
@@ -77,7 +77,7 @@ additional_vim_regex_highlighting = false,
 }
 EOF
 
-let g:nvim_tree_quit_on_open = 0 "0 by default, closes the tree when you open a file
+let g:nvim_tree_quit_on_open = 1 "0 by default, closes the tree when you open a file
 let g:nvim_tree_indent_markers = 0 "0 by default, this option shows indent markers when folders are open
 let g:nvim_tree_git_hl = 1 "0 by default, will enable file highlight for git attributes (can be used without the icons).
 let g:nvim_tree_highlight_opened_files = 1 "0 by default, will enable folder and file icon highlight for opened files/directories.
@@ -237,7 +237,7 @@ timeout = 500,
 require('bufferline').setup {
   options = {
     numbers = "ordinal",
-    close_command = "bdelete! %d",       -- can be a string | function, see "Mouse actions"
+    close_command = "bw",       -- can be a string | function, see "Mouse actions"
       right_mouse_command = "bdelete! %d", -- can be a string | function, see "Mouse actions"
         left_mouse_command = "buffer %d",    -- can be a string | function, see "Mouse actions"
           middle_mouse_command = nil,          -- can be a string | function, see "Mouse actions"
