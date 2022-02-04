@@ -9,19 +9,8 @@ filetype indent on
 filetype plugin indent on
 let NERDTreeShowHidden=1
 set cmdheight&
-if exists('+termguicolors')
-  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
-endif
-set t_Co=256
+set termguicolors
 command Q bw
-
-"Ale
-let g:ale_sign_error = ''
-let g:ale_sign_warning = ''
-let g:ale_sign_info = ''
-let g:ale_sign_hint = ''
 
 "Coc
 let g:coc_global_extensions = [
@@ -49,33 +38,6 @@ let g:closetag_regions = {
 let g:closetag_shortcut = '>'
 let g:closetag_close_shortcut = '<leader>>'
 
-"Lua plugin
-lua <<EOF
-require'nvim-treesitter.configs'.setup {
-  -- One of "all", "maintained" (parsers with maintainers), or a list of languages
-ensure_installed = "maintained",
-
--- Install languages synchronously (only applied to `ensure_installed`)
-sync_install = false,
-
--- List of parsers to ignore installing
--- ignore_install = { "javascript" },
-
-highlight = {
-  -- `false` will disable the whole extension
-enable = true,
-
--- list of language that will be disabled
--- disable = { "c", "rust" },
-
--- Setting this to true will run `:h syntax` and tree-sitter at the same time.
--- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
--- Using this option may slow down your editor, and you may see some duplicate highlights.
--- Instead of true it can also be a list of languages
-additional_vim_regex_highlighting = false,
-},
-}
-EOF
 
 let g:nvim_tree_quit_on_open = 1 "0 by default, closes the tree when you open a file
 let g:nvim_tree_indent_markers = 0 "0 by default, this option shows indent markers when folders are open
@@ -147,8 +109,6 @@ nnoremap <leader>r :NvimTreeRefresh<CR>
 nnoremap <leader>n :NvimTreeFindFile<CR>
 " NvimTreeOpen, NvimTreeClose, NvimTreeFocus, NvimTreeFindFileToggle, and NvimTreeResize are also available if you need them
 
-set termguicolors " this variable must be enabled for colors to be applied properly
-
 " a list of groups can be found at `:help nvim_tree_highlight`
 highlight NvimTreeFolderIcon guibg=blue
 
@@ -166,9 +126,33 @@ nnoremap <silent>be :BufferLineSortByExtension<CR>
 nnoremap <silent>bd :BufferLineSortByDirectory<CR>
 nnoremap <silent><mymap> :lua require'bufferline'.sort_buffers_by(function (buf_a, buf_b) return buf_a.id < buf_b.id end)<CR>
 
-
+"Lua plugin
 lua <<EOF
 require('nord').set()
+require'nvim-treesitter.configs'.setup {
+  -- One of "all", "maintained" (parsers with maintainers), or a list of languages
+ensure_installed = "maintained",
+
+-- Install languages synchronously (only applied to `ensure_installed`)
+sync_install = false,
+
+-- List of parsers to ignore installing
+-- ignore_install = { "javascript" },
+
+highlight = {
+  -- `false` will disable the whole extension
+enable = true,
+
+-- list of language that will be disabled
+-- disable = { "c", "rust" },
+
+-- Setting this to true will run `:h syntax` and tree-sitter at the same time.
+-- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
+-- Using this option may slow down your editor, and you may see some duplicate highlights.
+-- Instead of true it can also be a list of languages
+additional_vim_regex_highlighting = false,
+},
+}
 require('lualine').setup({
 options = {
   theme = 'nord'
@@ -301,8 +285,8 @@ require('bufferline').setup {
     always_show_bufferline = true,
     }
   }
-EOF
 
+EOF
 " lua <<EOF
 " local onedarkpro = require('onedarkpro')
 " onedarkpro.setup({

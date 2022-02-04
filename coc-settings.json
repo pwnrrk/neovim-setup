@@ -1,4 +1,7 @@
 {
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextPrefix": " ",
+  "diagnostic.virtualTextCurrentLineOnly": false,
   "diagnostic.warningSign": "",
   "diagnostic.infoSign": "",
   "diagnostic.errorSign": "",
