@@ -285,16 +285,4 @@ require('bufferline').setup {
     always_show_bufferline = true,
     }
   }
-
 EOF
-" lua <<EOF
-" local onedarkpro = require('onedarkpro')
-" onedarkpro.setup({
-" colors = {
-  "   onedark = {
-    "     bg = "#282C34"
-    "     }
-    "   }
-    " })
-    " onedarkpro.load()
-    " EOF
