@@ -8,6 +8,7 @@ cmd "source ~/.vim/vimrc/plugin.vim"
 cmd "source ~/.vim/vimrc/coc.vim"
 cmd "source ~/.vim/vimrc/mic.vim"
 require("nord").set()
+require('lualine').setup()
 require('bufferline').setup {
   options = {
     numbers = "ordinal",
@@ -75,11 +76,6 @@ require('bufferline').setup {
               always_show_bufferline = true,
             }
           }
-require('lualine').setup({
-    options = {
-      theme = 'nord'
-    }
-  })
 require'nvim-tree'.setup {
   disable_netrw       = true,
   hijack_netrw        = true,
