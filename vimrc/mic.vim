@@ -31,8 +31,6 @@ let g:coc_global_extensions = [
       \ ]
 
 "Close tag
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
-let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
 let g:closetag_filetypes = 'html,xhtml,phtml'
 let g:closetag_xhtml_filetypes = 'xhtml,jsx'
 let g:closetag_emptyTags_caseSensitive = 1
@@ -42,9 +40,7 @@ let g:closetag_regions = {
       \ 'typescriptreact': 'jsxRegion,tsxRegion',
       \ 'javascriptreact': 'jsxRegion',
       \ }
-let g:closetag_shortcut = '>'
-let g:closetag_close_shortcut = '<leader>>'
-
+let g:closetag_shortcut = '<CR>'
 
 let g:nvim_tree_quit_on_open = 1 "0 by default, closes the tree when you open a file
 let g:nvim_tree_indent_markers = 0 "0 by default, this option shows indent markers when folders are open
