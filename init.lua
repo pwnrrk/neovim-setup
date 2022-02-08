@@ -1,13 +1,31 @@
 local cmd = vim.cmd  -- to execute Vim commands e.g. cmd('pwd')
-local fn = vim.fn    -- to call Vim functions e.g. fn.bufnr()
 local g = vim.g      -- a table to access global variables
-local opt = vim.opt  -- to set options
 cmd "set runtimepath+=~/.vim"
 cmd "source ~/.vim/autoload/plug.vim"
 cmd "source ~/.vim/vimrc/plugin.vim"
 cmd "source ~/.vim/vimrc/coc.vim"
 cmd "source ~/.vim/vimrc/mic.vim"
-require("nord").set()
+g.material_style = "darker"
+require('material').setup{
+	contrast = {
+		sidebars = true, -- Enable contrast for sidebar-like windows ( for example Nvim-Tree )
+		floating_windows = true, -- Enable contrast for floating windows
+		line_numbers = false, -- Enable contrast background for line numbers
+		sign_column = false, -- Enable contrast background for the sign column
+		cursor_line = false, -- Enable darker background for the cursor line
+		non_current_windows = false, -- Enable darker background for non-current windows
+		popup_menu = false, -- Enable lighter background for the popup menu
+	},
+	italics = {
+		comments = true, -- Enable italic comments
+		keywords = true, -- Enable italic keywords
+		functions = false, -- Enable italic functions
+		strings = false, -- Enable italic strings
+		variables = false -- Enable italic variables
+	}
+}
+
+cmd "colorscheme material"
 require('lualine').setup()
 require('bufferline').setup {
   options = {
@@ -70,8 +88,6 @@ require('bufferline').setup {
               show_close_icon = true,
               show_tab_indicators = true,
               persist_buffer_sort = true, -- whether or not custom sorted buffers should persist
-              -- can also be a table containing 2 custom separators
-              -- [focused and unfocused]. eg: { '|', '|' }
               enforce_regular_tabs = true,
               always_show_bufferline = true,
             }
@@ -136,26 +152,10 @@ require'nvim-tree'.setup {
   }
 }
 require'nvim-treesitter.configs'.setup {
-  -- One of "all", "maintained" (parsers with maintainers), or a list of languages
   ensure_installed = "maintained",
-
-  -- Install languages synchronously (only applied to `ensure_installed`)
   sync_install = false,
-
-  -- List of parsers to ignore installing
-  -- ignore_install = { "javascript" },
-
   highlight = {
-    -- `false` will disable the whole extension
     enable = true,
-
-    -- list of language that will be disabled
-    -- disable = { "c", "rust" },
-
-    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
-    -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
-      -- Using this option may slow down your editor, and you may see some duplicate highlights.
-      -- Instead of true it can also be a list of languages
       additional_vim_regex_highlighting = false,
     },
   }
