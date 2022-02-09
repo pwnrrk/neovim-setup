@@ -7,9 +7,9 @@ set nowrap
 set sidescroll=1
 filetype indent on
 filetype plugin indent on
-let NERDTreeShowHidden=1
 set cmdheight&
 set termguicolors
+set t_Co=256
 command Q bw
 " On pressing tab, insert 2 spaces
 set expandtab
