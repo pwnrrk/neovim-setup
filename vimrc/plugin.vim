@@ -24,6 +24,7 @@ Plug 'olimorris/onedarkpro.nvim'
 Plug 'shaunsingh/nord.nvim'
 Plug 'Shatur/neovim-ayu'
 Plug 'marko-cerovac/material.nvim'
+Plug 'morhetz/gruvbox'
 " Initialize plugin system
 call plug#end()
 
