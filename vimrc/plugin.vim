@@ -21,10 +21,6 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons'
 "THEME
 Plug 'olimorris/onedarkpro.nvim'
-Plug 'shaunsingh/nord.nvim'
-Plug 'Shatur/neovim-ayu'
-Plug 'marko-cerovac/material.nvim'
-Plug 'morhetz/gruvbox'
 " Initialize plugin system
 call plug#end()
 

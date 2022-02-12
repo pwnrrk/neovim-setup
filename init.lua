@@ -5,7 +5,7 @@ cmd "source ~/.vim/autoload/plug.vim"
 cmd "source ~/.vim/vimrc/plugin.vim"
 cmd "source ~/.vim/vimrc/coc.vim"
 cmd "source ~/.vim/vimrc/mic.vim"
-cmd "colorscheme ayu"
+require("onedarkpro").load()
 require('lualine').setup()
 require('bufferline').setup {
   options = {
