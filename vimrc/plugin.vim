@@ -21,6 +21,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons'
 "THEME
 Plug 'olimorris/onedarkpro.nvim'
+Plug 'Shatur/neovim-ayu'
 " Initialize plugin system
 call plug#end()
 
