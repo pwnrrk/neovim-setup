@@ -19,6 +19,8 @@ Plug 'alvan/vim-closetag'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 "THEME
 Plug 'olimorris/onedarkpro.nvim'
 Plug 'Shatur/neovim-ayu'
