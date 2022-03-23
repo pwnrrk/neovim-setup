@@ -10,6 +10,7 @@ filetype plugin indent on
 set cmdheight&
 set termguicolors
 set t_Co=256
+set foldmethod=indent
 command Q bw
 " On pressing tab, insert 2 spaces
 set expandtab
