@@ -5,10 +5,12 @@ cmd "source ~/.vim/autoload/plug.vim"
 cmd "source ~/.vim/vimrc/plugin.vim"
 cmd "source ~/.vim/vimrc/coc.vim"
 cmd "source ~/.vim/vimrc/mic.vim"
-require('ayu').colorscheme()
+-- require('ayu').colorscheme()
 -- cmd "hi Normal guibg=NONE ctermbg=NONE"
 -- cmd "hi clear LineNr"
 -- cmd "hi clear SignColumn"
+--
+cmd "colorscheme gruvbox"
 require('lualine').setup()
 require('bufferline').setup {
   options = {

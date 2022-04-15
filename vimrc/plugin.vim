@@ -25,5 +25,7 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'olimorris/onedarkpro.nvim'
 Plug 'Shatur/neovim-ayu'
 Plug 'shaunsingh/nord.nvim'
+Plug 'lifepillar/vim-solarized8'
+Plug 'morhetz/gruvbox'
 " Initialize plugin system
 call plug#end()
