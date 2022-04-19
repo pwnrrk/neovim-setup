@@ -3,6 +3,7 @@ syntax on
 set mouse=a
 set number
 set signcolumn=yes
+set cursorline
 set nowrap
 set sidescroll=1
 filetype indent on
