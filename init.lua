@@ -84,7 +84,6 @@ require'nvim-tree'.setup {
   open_on_setup        = false,
   ignore_buffer_on_setup = false,
   ignore_ft_on_setup   = {},
-  auto_close           = false,
   auto_reload_on_write = true,
   open_on_tab          = false,
   hijack_cursor        = false,
@@ -168,11 +167,11 @@ require'nvim-tree'.setup {
   },
 }
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = "maintained",
+  ensure_installed = {"typescript","javascript","html","css"},
   sync_install = false,
   highlight = {
     enable = true,
-    additional_vim_regex_highlighting = false,
+    additional_vim_regex_highlighting = true,
   },
 }
 require('telescope').setup{
