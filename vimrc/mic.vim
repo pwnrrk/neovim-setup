@@ -37,18 +37,6 @@ let g:coc_global_extensions = [
       \ 'coc-styled-components'
       \ ]
 
-"Close tag
-let g:closetag_filetypes = 'html,xhtml,phtml'
-let g:closetag_xhtml_filetypes = 'xhtml,jsx,tsx'
-let g:closetag_emptyTags_caseSensitive = 1
-let g:closetag_regions = {
-      \ 'typescript.tsx': 'jsxRegion,tsxRegion',
-      \ 'javascript.jsx': 'jsxRegion',
-      \ 'typescriptreact': 'jsxRegion,tsxRegion',
-      \ 'javascriptreact': 'jsxRegion',
-      \ }
-let g:closetag_shortcut = '>'
-
 " vimrc
 let g:nvim_tree_git_hl = 1 "0 by default, will enable file highlight for git attributes (can be used without the icons).
 let g:nvim_tree_highlight_opened_files = 1 "0 by default, will enable folder and file icon highlight for opened files/directories.
