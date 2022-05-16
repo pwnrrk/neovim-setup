@@ -12,6 +12,10 @@ set cmdheight&
 set termguicolors
 set t_Co=256
 set foldmethod=indent
+set smartindent
+set expandtab
+set tabstop=2
+set shiftwidth=2
 command Q bw
 "term
 if has('win64')

@@ -1,21 +1,20 @@
 {
-  "diagnostic.virtualText": true,
-  "diagnostic.virtualTextPrefix": " ",
-  "diagnostic.virtualTextCurrentLineOnly": false,
-  "diagnostic.warningSign": "",
-  "diagnostic.infoSign": "",
-  "diagnostic.errorSign": "",
-  "diagnostic.hintSign": "",
-  "coc.preferences.formatOnSaveFiletypes": [
-    "css",
-    "markdown",
-    "typescript",
-    "javascript",
-    "html",
-    "json",
-    "typescriptreact",
-    "javascriptreact",
-    "vue"
-  ],
-  "vetur.format.defaultFormatter.js": "prettier-eslint"
+        "diagnostic.virtualText": true,
+        "diagnostic.virtualTextPrefix": " ",
+        "diagnostic.virtualTextCurrentLineOnly": false,
+        "diagnostic.warningSign": "",
+        "diagnostic.infoSign": "",
+        "diagnostic.errorSign": "",
+        "diagnostic.hintSign": "",
+        "coc.preferences.formatOnSaveFiletypes": [
+                "css",
+                "markdown",
+                "typescript",
+                "javascript",
+                "html",
+                "json",
+                "typescriptreact",
+                "javascriptreact"
+        ],
+        "prettier.tabWidth": 8
 }
