@@ -167,7 +167,7 @@ require'nvim-tree'.setup {
   },
 }
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = {"typescript","javascript","html","css"},
+  ensure_installed = {"typescript","javascript","html","css","tsx"},
   sync_install = false,
   highlight = {
     enable = true,
