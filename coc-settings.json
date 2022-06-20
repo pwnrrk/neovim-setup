@@ -1,19 +1,21 @@
 {
-        "diagnostic.virtualText": true,
-        "diagnostic.virtualTextPrefix": " ",
-        "diagnostic.virtualTextCurrentLineOnly": false,
-        "diagnostic.warningSign": "",
-        "diagnostic.infoSign": "",
-        "diagnostic.errorSign": "",
-        "diagnostic.hintSign": "",
-        "coc.preferences.formatOnSaveFiletypes": [
-                "css",
-                "markdown",
-                "typescript",
-                "javascript",
-                "html",
-                "json",
-                "typescriptreact",
-                "javascriptreact"
-        ]
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextPrefix": " ",
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "diagnostic.warningSign": "",
+  "diagnostic.infoSign": "",
+  "diagnostic.errorSign": "",
+  "diagnostic.hintSign": "",
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "typescript",
+    "javascript",
+    "html",
+    "json",
+    "typescriptreact",
+    "javascriptreact"
+  ],
+  "javascript.validate.enable": false,
+  "javascript.suggest.names": true
 }
