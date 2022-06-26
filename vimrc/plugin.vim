@@ -20,6 +20,8 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'windwp/nvim-ts-autotag'
+Plug 'sheerun/vim-polyglot'
+Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 "THEME
 Plug 'olimorris/onedarkpro.nvim'
 Plug 'Shatur/neovim-ayu'
