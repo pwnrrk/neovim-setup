@@ -8,10 +8,17 @@ cmd "colorscheme catppuccin"
 -- require('nord').set()
 require('lualine').setup()
 require('bufferline').setup()
-require("nvim-tree").setup()
+require("nvim-tree").setup{
+  actions = {
+    open_file = {
+      quit_on_open = true
+    }
+  }
+}
 require'nvim-treesitter.configs'.setup{
   highlight = {
     enable = true
   }
 }
 require('telescope').setup()
+require('nvim-ts-autotag').setup()
