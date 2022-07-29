@@ -11,7 +11,6 @@ filetype plugin indent on
 set cmdheight&
 set termguicolors
 set t_Co=256
-set foldmethod=indent
 set smartindent
 set expandtab
 set tabstop=2

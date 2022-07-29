@@ -6,16 +6,6 @@
   "diagnostic.infoSign": "",
   "diagnostic.errorSign": "",
   "diagnostic.hintSign": "",
-  "coc.preferences.formatOnSaveFiletypes": [
-    "css",
-    "markdown",
-    "typescript",
-    "javascript",
-    "html",
-    "json",
-    "typescriptreact",
-    "javascriptreact"
-  ],
   "javascript.validate.enable": false,
   "coc.source.around.enable": false,
   "coc.source.buffer.enable": false,
