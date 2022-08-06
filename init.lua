@@ -4,11 +4,12 @@ cmd "source ~/.vim/autoload/plug.vim"
 cmd "source ~/.vim/vimrc/plugin.vim"
 cmd "source ~/.vim/vimrc/coc.vim"
 cmd "source ~/.vim/vimrc/mic.vim"
-cmd "colorscheme catppuccin"
-cmd "hi Normal guibg=NONE ctermbg=NONE"
-cmd "hi clear LineNr"
-cmd "hi clear SignColumn"
+-- cmd "colorscheme catppuccin"
+-- cmd "hi Normal guibg=NONE ctermbg=NONE"
+-- cmd "hi clear LineNr"
+-- cmd "hi clear SignColumn"
 -- require('nord').set()
+require('ayu').colorscheme()
 require('lualine').setup()
 require('bufferline').setup()
 require("nvim-tree").setup{
