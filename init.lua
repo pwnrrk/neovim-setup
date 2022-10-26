@@ -22,6 +22,9 @@ require("nvim-tree").setup{
 require'nvim-treesitter.configs'.setup{
   highlight = {
     enable = true
+  },
+  ensure_installed = {
+    "javascript", "typescript", "css", "html", "json"
   }
 }
 require('telescope').setup()
