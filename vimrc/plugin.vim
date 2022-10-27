@@ -19,7 +19,6 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'windwp/nvim-ts-autotag'
-Plug 'sheerun/vim-polyglot'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "THEME
 Plug 'olimorris/onedarkpro.nvim'

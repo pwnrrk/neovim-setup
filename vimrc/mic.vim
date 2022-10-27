@@ -15,7 +15,6 @@ set smartindent
 set expandtab
 set tabstop=2
 set shiftwidth=2
-command Q bw
 "term
 if has('win64')
     set shell=pwsh
@@ -61,6 +60,7 @@ nnoremap <silent>be :BufferLineSortByExtension<CR>
 nnoremap <silent>bd :BufferLineSortByDirectory<CR>
 nnoremap <silent><mymap> :lua require'bufferline'.sort_buffers_by(function (buf_a, buf_b) return buf_a.id < buf_b.id end)<CR>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>gf <cmd>Telescope git_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
