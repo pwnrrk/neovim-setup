@@ -1,4 +1,5 @@
 {
+  "suggest.virtualText": true,
   "diagnostic.virtualText": true,
   "diagnostic.virtualTextPrefix": " ",
   "diagnostic.virtualTextCurrentLineOnly": false,
@@ -6,7 +7,10 @@
   "diagnostic.infoSign": "",
   "diagnostic.errorSign": "",
   "diagnostic.hintSign": "",
+  "typescript.validate.enable": true,
   "javascript.validate.enable": false,
+  "suggest.selection": "first",
+  "suggest.enablePreselect": true,
   "suggest.completionItemKindLabels": {
     "text": "",
     "method": "",
@@ -32,6 +36,6 @@
     "struct": "פּ",
     "event": "",
     "operator": "",
-    "typeParameter": ""
+    "typeParameter": "T"
   }
 }

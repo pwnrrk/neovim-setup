@@ -11,7 +11,6 @@ cmd "source ~/.vim/vimrc/mic.vim"
 -- require('nord').set()
 require('ayu').colorscheme()
 require('lualine').setup()
-require('bufferline').setup()
 require("nvim-tree").setup{
   actions = {
     open_file = {
@@ -29,3 +28,6 @@ require'nvim-treesitter.configs'.setup{
 }
 require('telescope').setup()
 require('nvim-ts-autotag').setup()
+require("nvim-autopairs").setup {}
+require('nvim_comment').setup()
+require('surround').setup {mappings_style = "surround"}
