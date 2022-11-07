@@ -28,7 +28,8 @@ let g:coc_global_extensions = [
       \ 'coc-json',
       \ 'coc-eslint',
       \ 'coc-prettier',
-      \ 'coc-styled-components'
+      \ 'coc-styled-components',
+      \ 'coc-pairs'
       \ ]
 
 nnoremap <C-n> :NvimTreeToggle<CR>
