@@ -28,8 +28,6 @@ require'nvim-treesitter.configs'.setup{
 }
 require('telescope').setup()
 require('nvim-ts-autotag').setup()
-require('nvim_comment').setup()
-require('surround').setup {mappings_style = "surround"}
 require("bufferline").setup{
   options = {
     diagnostics = "coc"
