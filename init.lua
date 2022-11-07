@@ -30,4 +30,8 @@ require('telescope').setup()
 require('nvim-ts-autotag').setup()
 require('nvim_comment').setup()
 require('surround').setup {mappings_style = "surround"}
-require('cokeline').setup()
+require("bufferline").setup{
+  options = {
+    diagnostics = "coc"
+  }
+}
