@@ -19,6 +19,7 @@ Plug 'akinsho/bufferline.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'windwp/nvim-ts-autotag'
+Plug 'yamatsum/nvim-cursorline'
 "THEME
 Plug 'olimorris/onedarkpro.nvim'
 Plug 'Shatur/neovim-ayu'
