@@ -7,10 +7,7 @@
   "diagnostic.infoSign": "",
   "diagnostic.errorSign": "",
   "diagnostic.hintSign": "",
-  "typescript.validate.enable": true,
-  "javascript.validate.enable": false,
-  "suggest.selection": "first",
-  "suggest.enablePreselect": true,
+  "suggest.noselect": true,
   "suggest.completionItemKindLabels": {
     "text": "",
     "method": "",

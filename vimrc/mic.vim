@@ -4,6 +4,7 @@ set mouse=a
 set number
 set signcolumn=yes
 set cursorline
+hi CursorLine term=bold cterm=bold
 set nowrap
 set sidescroll=1
 filetype indent on
@@ -15,6 +16,8 @@ set smartindent
 set expandtab
 set tabstop=2
 set shiftwidth=2
+nnoremap <SPACE> <Nop>
+let mapleader=" "
 "term
 if has('win64')
     set shell=pwsh
@@ -53,13 +56,12 @@ nnoremap <silent>gt :BufferLineCycleNext<CR>
 nnoremap <silent>gT :BufferLineCyclePrev<CR>
 
 " These commands will move the current buffer backwards or forwards in the bufferline
-nnoremap <silent><mymap> :BufferLineMoveNext<CR>
-nnoremap <silent><mymap> :BufferLineMovePrev<CR>
+nnoremap <silent>mn :BufferLineMoveNext<CR>
+nnoremap <silent>mb :BufferLineMovePrev<CR>
 
 " These commands will sort buffers by directory, language, or a custom criteria
 nnoremap <silent>be :BufferLineSortByExtension<CR>
 nnoremap <silent>bd :BufferLineSortByDirectory<CR>
-nnoremap <silent><mymap> :lua require'bufferline'.sort_buffers_by(function (buf_a, buf_b) return buf_a.id < buf_b.id end)<CR>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>gf <cmd>Telescope git_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
