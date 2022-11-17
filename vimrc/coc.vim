@@ -72,6 +72,8 @@ nmap <leader>rn <Plug>(coc-rename)
 " Formatting selected code.
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>fm <Plug>(coc-format)
+nmap <leader>fm <Plug>(coc-format)
 
 augroup mygroup
   autocmd!
@@ -151,4 +153,3 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
-nnoremap <silent><nowait> <space>f  :call CocActionAsync('format')<CR>
