@@ -3,6 +3,8 @@ cmd "set runtimepath+=~/.vim"
 cmd "source ~/.vim/autoload/plug.vim"
 cmd "source ~/.vim/vimrc/plugin.vim"
 require('ayu').colorscheme()
+cmd "hi Normal guibg=NONE ctermbg=NONE"
+cmd "hi EndOfBuffer guibg=NONE ctermbg=NONE"
 require('lualine').setup()
 require("nvim-tree").setup{
   actions = {
