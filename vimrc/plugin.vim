@@ -28,6 +28,7 @@ Plug 'lifepillar/vim-solarized8'
 Plug 'morhetz/gruvbox'
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'bluz71/vim-moonfly-colors'
+Plug 'folke/tokyonight.nvim'
 " Initialize plugin system
 call plug#end()
 
