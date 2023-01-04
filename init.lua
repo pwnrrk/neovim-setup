@@ -2,7 +2,9 @@ local cmd = vim.cmd
 cmd "set runtimepath+=~/.vim"
 cmd "source ~/.vim/autoload/plug.vim"
 cmd "source ~/.vim/vimrc/plugin.vim"
-require('ayu').colorscheme()
+cmd "colorscheme tokyonight-night"
+-- require('ayu').colorscheme()
+-- require("onedark").load()
 require('lualine').setup()
 require("nvim-tree").setup{
   actions = {

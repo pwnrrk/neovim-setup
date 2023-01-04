@@ -20,6 +20,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'windwp/nvim-ts-autotag'
 Plug 'yamatsum/nvim-cursorline'
+Plug 'lambdalisue/glyph-palette.vim'
 "THEME
 Plug 'olimorris/onedarkpro.nvim'
 Plug 'Shatur/neovim-ayu'
@@ -27,6 +28,9 @@ Plug 'shaunsingh/nord.nvim'
 Plug 'lifepillar/vim-solarized8'
 Plug 'morhetz/gruvbox'
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
+Plug 'drewtempelmeyer/palenight.vim'
+Plug 'navarasu/onedark.nvim'
+Plug 'folke/tokyonight.nvim'
 " Initialize plugin system
 call plug#end()
 
