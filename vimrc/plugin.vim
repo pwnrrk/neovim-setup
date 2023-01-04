@@ -30,6 +30,7 @@ Plug 'morhetz/gruvbox'
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'navarasu/onedark.nvim'
+Plug 'bluz71/vim-moonfly-colors'
 Plug 'folke/tokyonight.nvim'
 " Initialize plugin system
 call plug#end()

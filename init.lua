@@ -5,6 +5,8 @@ cmd "source ~/.vim/vimrc/plugin.vim"
 cmd "colorscheme tokyonight-night"
 -- require('ayu').colorscheme()
 -- require("onedark").load()
+-- cmd "hi Normal guibg=NONE ctermbg=NONE"
+-- cmd "hi EndOfBuffer guibg=NONE ctermbg=NONE"
 require('lualine').setup()
 require("nvim-tree").setup{
   actions = {
