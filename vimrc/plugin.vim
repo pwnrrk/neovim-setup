@@ -32,6 +32,7 @@ Plug 'drewtempelmeyer/palenight.vim'
 Plug 'navarasu/onedark.nvim'
 Plug 'bluz71/vim-moonfly-colors'
 Plug 'folke/tokyonight.nvim'
+Plug 'svrana/neosolarized.nvim'
 " Initialize plugin system
 call plug#end()
 

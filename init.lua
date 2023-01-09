@@ -2,7 +2,11 @@ local cmd = vim.cmd
 cmd "set runtimepath+=~/.vim"
 cmd "source ~/.vim/autoload/plug.vim"
 cmd "source ~/.vim/vimrc/plugin.vim"
-cmd "colorscheme tokyonight-night"
+require('neosolarized').setup({
+  comment_italics = true,
+  background_set = false,
+})
+-- cmd "colorscheme tokyonight-night"
 -- require('ayu').colorscheme()
 -- require("onedark").load()
 -- cmd "hi Normal guibg=NONE ctermbg=NONE"
