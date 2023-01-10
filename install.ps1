@@ -1,11 +1,6 @@
 echo "Installing"
 echo "Creating directory"
-mkdir ~/AppData/Local/nvim
-mkdir ~/.vim
 echo "Copying files"
-cp -force ./init.lua ~/AppData/Local/nvim
-cp -force ./coc-settings.json ~/AppData/Local/nvim
-cp -force -r ./autoload ~/.vim/
-cp -force -r ./vimrc ~/.vim/
-nvim +PlugInstall
+cp -r -force nvim $HOME/AppData/Local
+nvim +PackerInstall
 echo "Install Complete !!"
