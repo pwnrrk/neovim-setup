@@ -7,7 +7,6 @@
   "diagnostic.infoSign": "",
   "diagnostic.errorSign": "",
   "diagnostic.hintSign": "",
-  "javascript.validate.enable": false,
   "suggest.completionItemKindLabels": {
     "text": "",
     "method": "",
