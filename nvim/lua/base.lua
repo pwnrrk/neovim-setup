@@ -13,3 +13,4 @@ vim.opt.hlsearch = false
 vim.opt.smartindent = true
 vim.keymap.set('n', '<SPACE>', '<Nop>')
 vim.g.mapleader = ' '
+vim.opt.clipboard:prepend { 'unnamed', 'unnamedplus' }
