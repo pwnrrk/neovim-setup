@@ -11,6 +11,7 @@ vim.opt.shiftwidth = 2
 vim.opt.termguicolors = true
 vim.opt.hlsearch = false
 vim.opt.smartindent = true
+vim.opt.foldmethod = "indent"
+vim.opt.clipboard:prepend { 'unnamed', 'unnamedplus' }
 vim.keymap.set('n', '<SPACE>', '<Nop>')
 vim.g.mapleader = ' '
-vim.opt.clipboard:prepend { 'unnamed', 'unnamedplus' }
