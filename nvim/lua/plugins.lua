@@ -19,15 +19,18 @@ packer.startup(function(use)
 	use 'nvim-treesitter/nvim-treesitter'
 	use 'lewis6991/gitsigns.nvim'
 	use 'akinsho/bufferline.nvim'
-	use 'neoclide/coc.nvim'
+	use {
+		'neoclide/coc.nvim',
+		{branch = 'release'}
+	}
 	use {'nvim-telescope/telescope.nvim', requires = {'nvim-lua/plenary.nvim'}}
 	use 'windwp/nvim-ts-autotag'
 	use 'yamatsum/nvim-cursorline'
 	use 'lambdalisue/glyph-palette.vim'
-  use 'tpope/vim-surround'
-  use 'tpope/vim-commentary'
-  use 'tpope/vim-sensible'
-  use 'tpope/vim-fugitive'
+	use 'tpope/vim-surround'
+	use 'tpope/vim-commentary'
+	use 'tpope/vim-sensible'
+	use 'tpope/vim-fugitive'
 	use 'APZelos/blamer.nvim'
 
 
