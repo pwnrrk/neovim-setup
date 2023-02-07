@@ -21,7 +21,7 @@ packer.startup(function(use)
 	use 'akinsho/bufferline.nvim'
 	use {
 		'neoclide/coc.nvim',
-		{branch = 'release'}
+		branch = 'release'
 	}
 	use {'nvim-telescope/telescope.nvim', requires = {'nvim-lua/plenary.nvim'}}
 	use 'windwp/nvim-ts-autotag'
