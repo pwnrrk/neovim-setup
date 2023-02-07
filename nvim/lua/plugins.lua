@@ -24,7 +24,6 @@ packer.startup(function(use)
 		branch = 'release'
 	}
 	use {'nvim-telescope/telescope.nvim', requires = {'nvim-lua/plenary.nvim'}}
-	use 'windwp/nvim-ts-autotag'
 	use 'yamatsum/nvim-cursorline'
 	use 'lambdalisue/glyph-palette.vim'
 	use 'tpope/vim-surround'
