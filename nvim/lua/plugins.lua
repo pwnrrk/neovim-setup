@@ -4,8 +4,7 @@ local packer = require('packer')
 
 packer.startup(function(use)
 	use 'wbthomason/packer.nvim'
-	use 'svrana/neosolarized.nvim'
-	use 'tjdevries/colorbuddy.vim'
+	use 'Shatur/neovim-ayu'
 	use {
 		'nvim-tree/nvim-tree.lua',
 		requires = {
@@ -32,13 +31,5 @@ packer.startup(function(use)
 	use 'tpope/vim-fugitive'
 	use 'APZelos/blamer.nvim'
 
-
-	if install_plugins then
-		packer.sync()
-	end
 end)
-
-if install_plugins then
-	return
-end
 
