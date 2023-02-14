@@ -9,6 +9,7 @@ vim.opt.expandtab = false
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.termguicolors = true
+vim.cmd("set t_Co=256")
 vim.opt.hlsearch = false
 vim.opt.smartindent = true
 vim.opt.foldmethod = "indent"

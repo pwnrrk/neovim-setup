@@ -1,6 +1,7 @@
 require('base')
 require('plugins')
-require("config.ayu")
+-- require("config.ayu")
+require("config.catppuccin")
 require('config.nvimtree')
 require('config.lualine')
 require('config.treesitter')
