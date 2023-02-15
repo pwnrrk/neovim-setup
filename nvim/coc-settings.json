@@ -107,5 +107,6 @@
 		"zip",
 		"zlib",
 		"sqlsrv"
-	]
+	],
+	"colors.enable": true
 }
