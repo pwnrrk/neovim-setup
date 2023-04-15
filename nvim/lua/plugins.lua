@@ -6,6 +6,7 @@ packer.startup(function(use)
 	use 'wbthomason/packer.nvim'
 	use 'Shatur/neovim-ayu'
 	use { "catppuccin/nvim", as = "catppuccin" }
+	use 'arcticicestudio/nord-vim'
 	use {
 		'nvim-tree/nvim-tree.lua',
 		requires = {
