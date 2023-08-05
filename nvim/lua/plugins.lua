@@ -40,7 +40,6 @@ packer.startup(function(use)
 	use 'tpope/vim-commentary'
 	use 'tpope/vim-sensible'
 	use 'tpope/vim-fugitive'
-	use 'APZelos/blamer.nvim'
 
 end)
 
