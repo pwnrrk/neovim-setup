@@ -21,4 +21,4 @@ if vim.fn.has('win32') then
 end
 vim.keymap.set('n', '<SPACE>', '<Nop>')
 vim.g.mapleader = ' '
-vim.cmd[[colorscheme tokyonight-night]]
+vim.cmd[[colorscheme gruvbox]]

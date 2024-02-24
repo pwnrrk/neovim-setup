@@ -15,7 +15,7 @@ local packer = require('packer')
 
 packer.startup(function(use)
 	use 'wbthomason/packer.nvim'
-	use 'folke/tokyonight.nvim'
+	use { "ellisonleao/gruvbox.nvim" }
 	use {
 		'nvim-tree/nvim-tree.lua',
 		requires = {
@@ -34,12 +34,6 @@ packer.startup(function(use)
 		branch = 'release'
 	}
 	use {'nvim-telescope/telescope.nvim', requires = {'nvim-lua/plenary.nvim'}}
-	use 'yamatsum/nvim-cursorline'
 	use 'lambdalisue/glyph-palette.vim'
-	use 'tpope/vim-surround'
-	use 'tpope/vim-commentary'
-	use 'tpope/vim-sensible'
-	use 'tpope/vim-fugitive'
-
 end)
 

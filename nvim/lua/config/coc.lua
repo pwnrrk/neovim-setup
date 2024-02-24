@@ -188,12 +188,11 @@ keyset("n", "<space>p", ":<C-u>CocListResume<cr>", opts)
 
 vim.g.coc_global_extensions = {      
 	'coc-tsserver',
+	'coc-eslint',
 	'coc-html',
 	'coc-css',
 	'coc-json',
-	'coc-eslint',
 	'coc-prettier',
-	'coc-lua',
 	'coc-pairs',
 	'coc-emmet',
 	'coc-highlight',
