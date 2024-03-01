@@ -38,9 +38,6 @@ packer.startup(function(use)
 		tag = "*",
 	}
 	use {
-		'nvim-treesitter/nvim-treesitter-context'
-	}
-	use {
 		'yamatsum/nvim-cursorline'
 	}
 end)
