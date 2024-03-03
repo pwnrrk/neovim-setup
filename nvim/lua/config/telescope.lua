@@ -1,15 +1,4 @@
 require('telescope').setup{
-	-- pickers = {
-	-- 	find_files = {
-	-- 		theme = "dropdown",
-	-- 	},
-	-- 	git_files = {
-	-- 		theme = "dropdown",
-	-- 	},
-	-- 	live_grep = {
-	-- 		theme = "dropdown",
-	-- 	}
-	-- },
 	defaults = {
 		theme = "center",
 		sorting_strategy = "ascending",

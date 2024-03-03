@@ -12,7 +12,8 @@ vim.opt.termguicolors = true
 vim.cmd("set t_Co=256")
 vim.opt.hlsearch = false
 vim.opt.smartindent = true
-vim.opt.foldmethod = "indent"
+vim.opt.foldmethod = 'indent'
+vim.opt.foldenable = false
 vim.opt.clipboard:prepend { 'unnamed', 'unnamedplus' }
 if vim.fn.has('win32') then
 	vim.opt.shell = "pwsh"
