@@ -1,7 +1,6 @@
 require('plugins')
 require('base')
-require('config.neosolarized')
--- require('config.nvimtree')
+require('config.nvimtree')
 require('config.lualine')
 require('config.treesitter')
 require('config.gitsign')

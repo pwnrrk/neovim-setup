@@ -15,12 +15,11 @@ local packer = require('packer')
 
 packer.startup(function(use)
 	use 'wbthomason/packer.nvim'
-	use 'Tsuzat/NeoSolarized.nvim'
-	use {
-		'nvim-lualine/lualine.nvim',
-		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-	}
+	use 'kyazdani42/nvim-web-devicons'
+	use 'nvim-lualine/lualine.nvim'
 	use 'nvim-treesitter/nvim-treesitter'
+	use 'nvim-tree/nvim-web-devicons'
+	use 'nvim-tree/nvim-tree.lua'	
 	use 'lewis6991/gitsigns.nvim'
 	use 'akinsho/bufferline.nvim'
 	use {
@@ -40,5 +39,6 @@ packer.startup(function(use)
 	use {
 		'yamatsum/nvim-cursorline'
 	}
+	use "rebelot/kanagawa.nvim"
 end)
 
