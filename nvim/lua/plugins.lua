@@ -40,5 +40,11 @@ packer.startup(function(use)
 		'yamatsum/nvim-cursorline'
 	}
 	use "rebelot/kanagawa.nvim"
+	use { 
+  'olivercederborg/poimandres.nvim',
+  config = function()
+    require('poimandres').setup {}
+  end
+}
 end)
 
