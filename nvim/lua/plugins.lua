@@ -40,5 +40,6 @@ packer.startup(function(use)
 		'yamatsum/nvim-cursorline'
 	}
 	use "rebelot/kanagawa.nvim"
+	use ({ 'projekt0n/github-nvim-theme' })
 end)
 
