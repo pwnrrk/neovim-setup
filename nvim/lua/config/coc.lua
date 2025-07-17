@@ -196,5 +196,6 @@ vim.g.coc_global_extensions = {
 	'coc-pairs',
 	'coc-emmet',
 	'coc-highlight',
-	'coc-spell-checker'
+	'coc-spell-checker',
+	'coc-lua'
 }

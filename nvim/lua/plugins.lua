@@ -41,5 +41,6 @@ packer.startup(function(use)
 	}
 	use "rebelot/kanagawa.nvim"
 	use ({ 'projekt0n/github-nvim-theme' })
+}
 end)
 
