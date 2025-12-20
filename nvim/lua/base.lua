@@ -25,4 +25,4 @@ end
 
 vim.keymap.set('n', '<SPACE>', '<Nop>')
 vim.g.mapleader = ' '
-vim.cmd.colorscheme("github_dark_default")
+vim.cmd.colorscheme("onedark")

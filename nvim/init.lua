@@ -1,6 +1,5 @@
 require('plugins')
 require('base')
--- require("config.nightowl")
 require('config.nvimtree')
 require('config.lualine')
 require('config.treesitter')
