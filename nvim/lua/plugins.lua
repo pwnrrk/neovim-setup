@@ -42,5 +42,6 @@ packer.startup(function(use)
 	use "rebelot/kanagawa.nvim"
 	use ({ 'projekt0n/github-nvim-theme' })
 	use ("oxfist/night-owl.nvim")
+	use 'navarasu/onedark.nvim'
 end)
 
