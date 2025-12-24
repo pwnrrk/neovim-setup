@@ -43,5 +43,6 @@ packer.startup(function(use)
 	use ({ 'projekt0n/github-nvim-theme' })
 	use ("oxfist/night-owl.nvim")
 	use 'navarasu/onedark.nvim'
+	use 'Bekaboo/dropbar.nvim'
 end)
 
