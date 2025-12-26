@@ -20,6 +20,3 @@
 
     ./install.ps1
 
-## Features
-
-Setup for use as text editor with pre-installed features for web development. You can also install more languages features with coc.nvim. Plugins listed in vimrc/plugin.vim

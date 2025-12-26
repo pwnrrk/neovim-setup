@@ -1,12 +1,16 @@
-require('plugins')
-require('base')
-require('config.nvimtree')
-require('config.lualine')
-require('config.treesitter')
-require('config.gitsign')
-require('config.bufferline')
-require('config.coc')
-require('config.telescope')
-require('config.file-browser')
-require('config.comment')
-require("config.surround")
+-- Bootstrap lazy.nvim
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git", "clone", "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    lazypath,
+  })
+end
+vim.opt.rtp:prepend(lazypath)
+
+require("lazy").setup("plugins")
+
