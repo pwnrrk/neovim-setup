@@ -7,7 +7,9 @@ require("mason-lspconfig").setup({
     "html",
     "cssls",
     "jsonls",
-    "emmet_ls"
+    "emmet_ls",
+    "dockerls",
+    "yamlls"
   },
 })
 local navic = require("nvim-navic")
@@ -176,4 +178,16 @@ vim.lsp.config("emmet_ls", {
       },
     },
   },
+})
+
+-- Docker
+vim.lsp.config("dockerls", {
+  cmd = { "docker-langserver", "--stdio" },
+  filetypes = {"Dockerfile", "dockerfile"};
+})
+
+-- Yaml file
+vim.lsp.config("yamlls", {
+  cmd = { "yaml-language-server", "--stdio" },
+  filetypes = { "yaml" }
 })
