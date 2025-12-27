@@ -3,5 +3,5 @@ echo "Installing"
 echo "Creating directory"
 echo "Copying files"
 cp -r nvim $HOME/.config/
-nvim +PackerInstall
+nvim 
 echo "Install Complete !!"
