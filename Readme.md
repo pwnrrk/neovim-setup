@@ -9,14 +9,18 @@
 
 ## Installation
 
-    git clone https://github.com/pwnrrk/neovim-setup
-    cd neovim-setup
+git clone https://github.com/pwnrrk/neovim-setup
+cd neovim-setup
 
-    #For Linux and Mac OS
+# Setup language server with npm
 
-    ./install.sh
+sudo npm i -g typescript typescript-language-server eslint emmet-language-server vscode-languageservers-extracted
 
-    #For Windows
+#For Linux and Mac OS
 
-    ./install.ps1
+./install.sh
+
+#For Windows
+
+./install.ps1
 
