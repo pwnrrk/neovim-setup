@@ -166,9 +166,7 @@ vim.lsp.config("emmet_ls", {
     "html",
     "css",
     "scss",
-    "javascript",
     "javascriptreact",
-    "typescript",
     "typescriptreact",
   },
   init_options = {
