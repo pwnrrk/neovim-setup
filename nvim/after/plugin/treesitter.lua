@@ -1,17 +1,19 @@
 -- ~/.config/nvim/after/plugin/treesitter.lua
-require("nvim-treesitter").setup({
-  ensure_installed = {
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = { 
+    "c",
+    "lua",
+    "html",
+    "css",
     "javascript",
+    "jsx",
     "typescript",
     "tsx",
     "json",
-    "html",
-    "css",
-    "scss",
-    "lua",
-    "bash",
+    "docker",
+    "yaml",
   },
-  highlight = { enable = true },
-  indent = { enable = true },
+  callback = function() vim.treesitter.start() end,
 })
 
+vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
