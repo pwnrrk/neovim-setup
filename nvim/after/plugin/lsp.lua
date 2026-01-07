@@ -104,25 +104,14 @@ vim.opt.updatetime = 300
 -- TypeScript / JavaScript
 vim.lsp.config("ts_ls", {
   cmd = { "typescript-language-server", "--stdio" },
-  filetypes = {
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-  },
+  filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
   root_markers = { "package.json", "tsconfig.json", ".git" },
 })
 
 -- ESLint
 vim.lsp.config("eslint", {
   cmd = { "vscode-eslint-language-server", "--stdio" },
-  filetypes = {
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "vue",
-  },
+  filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx", "vue", "svelte", "astro", "htmlangular" },
   root_markers = {
     "eslint.config.js",
     ".eslintrc",
@@ -144,19 +133,28 @@ vim.lsp.config("eslint", {
   },
 })
 
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
 -- HTML
 vim.lsp.config("html", {
+  cmd = { "vscode-html-language-server", "--stdio" },
   filetypes = { "html" },
+  capabilities = capabilities,
 })
 
 -- CSS
 vim.lsp.config("cssls", {
+  cmd = { "vscode-css-language-server", "--stdio" },
   filetypes = { "css", "scss", "less" },
+  capabilities = capabilities,
 })
 
 -- JSON
 vim.lsp.config("jsonls", {
-  filetypes = { "json" },
+  cmd = { "vscode-json-language-server", "--stdio" },
+  filetypes = { "json", "jsonc" },
+  capabilities = capabilities,
 })
 
 -- Emmet
@@ -165,6 +163,7 @@ vim.lsp.config("emmet_ls", {
   filetypes = {
     "html",
     "css",
+    "less",
     "scss",
     "javascriptreact",
     "typescriptreact",
