@@ -70,5 +70,6 @@ return {
 
   -- Auto pair brackets etc.
   { "windwp/nvim-autopairs" }, 
+  { "tpope/vim-surround" },
 }
 
