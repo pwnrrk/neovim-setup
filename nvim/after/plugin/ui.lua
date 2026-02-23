@@ -8,8 +8,13 @@ require("nvim-tree").setup({
 })
 require("lualine").setup{
   options = {
+    theme = {
+      normal = { c = { fg = '#ffffff', bg = 'None' } },
+      inactive = { c = { fg = '#ffffff', bg = 'None' } }
+    },
     component_separators = "",
-    section_separators = { left = "", right = "" }
+    -- section_separators = { left = "", right = "" }
+    section_separators = { left = "", right = "" }
   },
 }
 

@@ -15,16 +15,29 @@
 -- }
 
 -- Catppuccin
+-- return {
+--   {
+--     "catppuccin/nvim",
+--     name = "catppuccin",
+--     priority = 1000,
+--     config = function()
+--       require("catppuccin").setup({
+--         flavour = "mocha"
+--       })
+--       vim.cmd.colorscheme "catppuccin"
+--     end
+--   }
+-- }
+
+-- VS Code
 return {
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
+    "Mofiqul/vscode.nvim",
+    name = "vscode",
     priority = 1000,
-    config = function()
-      require("catppuccin").setup({
-        flavour = "mocha"
-      })
-      vim.cmd.colorscheme "catppuccin"
+    config = function ()
+      require("vscode").setup()
+      vim.cmd.colorscheme "vscode"
     end
   }
 }
