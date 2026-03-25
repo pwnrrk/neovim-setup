@@ -30,14 +30,27 @@
 -- }
 
 -- VS Code
+-- return {
+--   {
+--     "Mofiqul/vscode.nvim",
+--     name = "vscode",
+--     priority = 1000,
+--     config = function ()
+--       require("vscode").setup()
+--       vim.cmd.colorscheme "vscode"
+--     end
+--   }
+-- }
+
+-- Ayu
 return {
   {
-    "Mofiqul/vscode.nvim",
-    name = "vscode",
+    "Shatur/neovim-ayu",
+    name = "ayu",
     priority = 1000,
     config = function ()
-      require("vscode").setup()
-      vim.cmd.colorscheme "vscode"
+      require("ayu").setup({})
+      vim.cmd.colorscheme "ayu-dark"
     end
   }
 }
