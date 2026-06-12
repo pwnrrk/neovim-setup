@@ -15,19 +15,19 @@
 -- }
 
 -- Catppuccin
--- return {
---   {
---     "catppuccin/nvim",
---     name = "catppuccin",
---     priority = 1000,
---     config = function()
---       require("catppuccin").setup({
---         flavour = "mocha"
---       })
---       vim.cmd.colorscheme "catppuccin"
---     end
---   }
--- }
+return {
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    config = function()
+      require("catppuccin").setup({
+        flavour = "macchiato"
+      })
+      vim.cmd.colorscheme "catppuccin"
+    end
+  }
+}
 
 -- VS Code
 -- return {
@@ -43,14 +43,14 @@
 -- }
 
 -- Ayu
-return {
-  {
-    "Shatur/neovim-ayu",
-    name = "ayu",
-    priority = 1000,
-    config = function ()
-      require("ayu").setup({})
-      vim.cmd.colorscheme "ayu-dark"
-    end
-  }
-}
+-- return {
+--   {
+--     "Shatur/neovim-ayu",
+--     name = "ayu",
+--     priority = 1000,
+--     config = function ()
+--       require("ayu").setup({})
+--       vim.cmd.colorscheme "ayu-dark"
+--     end
+--   }
+-- }

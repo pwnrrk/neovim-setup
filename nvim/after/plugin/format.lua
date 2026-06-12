@@ -11,6 +11,8 @@ require("conform").setup({
   },
 })
 
+require("guess-indent").setup({})
+
 vim.keymap.set("n", "<leader>fm", function()
   require("conform").format({ async = true })
 end)
