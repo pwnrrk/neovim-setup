@@ -14,15 +14,15 @@
 -- }
 
 -- Tokyo Night
-return {
-  'folke/tokyonight.nvim',
-  name = 'tokyo-night',
-  lazy = false,
-  priority = 1000,
-  config = function()
-    vim.cmd('colorscheme tokyonight')
-  end,
-}
+-- return {
+--   'folke/tokyonight.nvim',
+--   name = 'tokyo-night',
+--   lazy = false,
+--   priority = 1000,
+--   config = function()
+--     vim.cmd('colorscheme tokyonight')
+--   end,
+-- }
 
 -- Onedark
 -- return {
@@ -80,3 +80,13 @@ return {
 --     end
 --   }
 -- }
+
+-- Base 16
+return {
+  "tinted-theming/tinted-nvim",
+  priority = 1000,
+  lazy = false,
+  opts = {
+    default_scheme = "base16-twilight",
+  },
+}
