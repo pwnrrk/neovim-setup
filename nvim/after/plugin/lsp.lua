@@ -47,6 +47,10 @@ vim.api.nvim_create_autocmd("LspAttach", {
     if client.server_capabilities.documentSymbolProvider then
       navic.attach(client, buf)
     end
+
+    if client and client:supports_method("textDocument/inlayHint") then
+      vim.lsp.inlay_hint.enable(true, { bufnr = args.buf })
+    end
   end,
 })
 
@@ -106,6 +110,18 @@ vim.lsp.config("ts_ls", {
   cmd = { "typescript-language-server", "--stdio" },
   filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
   root_markers = { "package.json", "tsconfig.json", ".git" },
+  init_options = {
+    preferences = {
+      includeInlayParameterNameHints = "all", -- "none" | "literals" | "all"
+      includeInlayParameterNameHintsWhenArgumentMatchesName = true,
+      includeInlayFunctionParameterTypeHints = true,
+      includeInlayVariableTypeHints = true,
+      includeInlayVariableTypeHintsWhenTypeMatchesName = false,
+      includeInlayPropertyDeclarationTypeHints = true,
+      includeInlayFunctionLikeReturnTypeHints = true,
+      includeInlayEnumMemberValueHints = true,
+    },
+  },
 })
 
 -- ESLint
