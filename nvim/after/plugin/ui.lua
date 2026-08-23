@@ -47,28 +47,28 @@ require("lualine").setup{
     lualine_b = {
       {
         'branch',
-        icon = '',
+        -- icon = '',
       },
       {
         'diagnostics',
       },
     },
     lualine_c = {
-      {
-        'filename',
-        path = 0, -- just filename, no path (VS Code shows this in the tab, not status bar)
-        symbols = { modified = ' ●', readonly = ' 🔒' },
-      },
+      -- {
+      --   'filename',
+      --   path = 0, -- just filename, no path (VS Code shows this in the tab, not status bar)
+      --   symbols = { modified = ' ●', readonly = ' 🔒' },
+      -- },
     },
     lualine_x = {
-      'filetype',
+      { 'location', icon = '' }, -- line:col, VS Code style
     },
     lualine_y = {
       'encoding',
       { 'fileformat', symbols = { unix = 'LF', dos = 'CRLF', mac = 'CR' } },
     },
     lualine_z = {
-      { 'location', icon = '' }, -- line:col, VS Code style
+      'filetype',
     },
   },
   inactive_sections = {
