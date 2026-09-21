@@ -82,24 +82,24 @@
 -- }
 
 -- Base 16
--- return {
---   "tinted-theming/tinted-nvim",
---   priority = 1000,
---   lazy = false,
---   opts = {
---     default_scheme = "base16-tomorrow-night",
---   },
--- }
+return {
+  "tinted-theming/tinted-nvim",
+  priority = 1000,
+  lazy = false,
+  opts = {
+    default_scheme = "base16-tomorrow-night",
+  },
+}
 
 -- Nord
-return {
-  {
-    'shaunsingh/nord.nvim',
-    name = "nord",
-    priority = 1000,
-    config = function ()
-      vim.cmd.colorscheme "nord"
-    end
-
-  }
-}
+-- return {
+--   {
+--     'shaunsingh/nord.nvim',
+--     name = "nord",
+--     priority = 1000,
+--     config = function ()
+--       vim.cmd.colorscheme "nord"
+--     end
+--
+--   }
+-- }
