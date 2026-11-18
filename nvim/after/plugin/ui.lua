@@ -106,3 +106,28 @@ vim.opt.expandtab = true -- convert TAB to spaces
 vim.opt.clipboard = "unnamedplus"
 vim.opt.wrap = false
 vim.opt.autoread = true
+
+-- Copy "@relative/path#L<start>-<end>" for the current buffer's file (Copilot CLI ref)
+local function copilot_ref()
+  local path = vim.fn.fnamemodify(vim.api.nvim_buf_get_name(0), ":.")
+  if path == "" then
+    vim.notify("Buffer has no file", vim.log.levels.WARN)
+    return
+  end
+
+  local mode = vim.fn.mode()
+  local ref
+  if mode == "v" or mode == "V" or mode == "\22" then
+    local s, e = vim.fn.line("v"), vim.fn.line(".")
+    if s > e then s, e = e, s end
+    ref = (s == e) and ("@%s#L%d"):format(path, s) or ("@%s#L%d-%d"):format(path, s, e)
+    vim.api.nvim_feedkeys(vim.keycode("<Esc>"), "n", false) -- leave visual mode
+  else
+    ref = ("@%s#L%d"):format(path, vim.fn.line("."))
+  end
+
+  vim.fn.setreg("+", ref)
+  vim.notify("Copied: " .. ref)
+end
+
+vim.keymap.set({ "n", "x" }, "<leader>cr", copilot_ref, { desc = "Copy Copilot CLI file/range ref" })
